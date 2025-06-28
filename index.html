@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jk Tripuri - Portfolio</title>
+ <meta name="description" content="Hi, I'm Jk Dev—a full-stack developer specializing in Node.js and Python. Explore my portfolio featuring web applications, intelligent bots, and automation projects. Contact me or connect via social links." />
+ <link rel="icon" type="image/png" href="fevicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <section class="main-section">
+      <img class="profile-photo" src="profile.png" alt="Profile Photo" />
+      <h1>Hi I'm Jk Dev</h1>
+      <div class="about-section">
+        <h2>Welcome</h2>
+        <h2>I design and build</h2>
+        <h2>
+          <span class="typewriter" id="typewriter"></span>
+        </h2>
+        <p>
+          A Full-Stack Developer fluent in Node.js and Python, with experience in crafting web applications, intelligent bots, and automation systems.
+        </p>
+        <a href="#" class="cta-button">Send Enquiry</a>
+      </div>
+    </section>
+    <!-- Contact Form Popup -->
+    <div id="contact-popup" class="popup hidden">
+      <div class="popup-content">
+        <span class="close-btn" onclick="togglePopup()">&times;</span>
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/mblyqypj" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="_replyto" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Send</button>
+        </form>
+        <p id="response-message" class="response hidden">I have received your message. I’ll contact you shortly.</p>
+      </div>
+    </div>
+    <!-- Social Links at Bottom -->
+    <div class="social-bottom">
+      <span class="social-title">Social Links</span>
+      <div class="social-icons">
+        <a href="https://wa.me/917353130698" class="social-icon" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/jktripuri" class="social-icon" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://discord.gg/tjRjKzTZg9" class="social-icon" target="_blank" aria-label="Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
